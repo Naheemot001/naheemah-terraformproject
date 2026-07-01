@@ -6,6 +6,12 @@ terraform {
       version = "~>4.0"
     }
   }
+  backend "s3" {
+    bucket = "naheemah-terraform-state"
+    region = "ca-central-1"
+    key    = "naheemah-terraform.tfstate"
+
+  }
 }
 
 provider "aws" {
