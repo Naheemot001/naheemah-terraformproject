@@ -1,7 +1,7 @@
 resource "aws_security_group" "naheemah_app_sg" {
   name        = "naheemah-app-sg"
   description = "security group for naheema application"
-  vpc_id      = "vpc-084a10f473fb0a8bb"
+  vpc_id      = var.vpc_id
 }
 
 resource "aws_security_group_rule" "ssh_rule" {

@@ -1,0 +1,5 @@
+ami = "ami-0e80e7e160cbfbc53"
+instance_type = "t2.micro"
+vpc_id = "vpc-084a10f473fb0a8bb"
+key_name = "Ajay_dev"
+environment = "dev"
